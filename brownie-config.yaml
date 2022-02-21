@@ -1,0 +1,17 @@
+dependencies:
+
+dotenv: .env
+
+compiler:
+  solc:
+    remappings:
+      - '@chainlink = smartcontractkit/chainlink-brownie-contracts@1.1.1'
+
+networks:
+  kovan:
+    eth_usd_adr: '0x9326BFA02ADD2366b30bacB125260Af641031331'
+  mainnet-fork-dev:
+    eth_usd_adr: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
+
+wallets:
+  from_key: ${PRIVATE_KEY}
